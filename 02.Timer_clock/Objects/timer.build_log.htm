@@ -1,0 +1,107 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.38.0.0
+Copyright (C) 2022 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Nhut Nguyen, Umbala, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.38.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.19
+Assembler:       Armasm.exe V6.19
+Linker/Locator:  ArmLink.exe V6.19
+Library Manager: ArmAr.exe V6.19
+Hex Converter:   FromElf.exe V6.19
+CPU DLL:         SARMCM3.DLL V5.38.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.1.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\3.Project\3.MCU_STM32\02.Timer_clock\timer.uvprojx
+Project File Date:  08/07/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.19', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'STM32F103C8T6'
+main.c(1): warning: In file included from...
+C:/Users/NhutNguyen/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(18): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *              - To use or not the peripheral<92>s drivers in application code(i.e. 
+                                               ^
+C:/Users/NhutNguyen/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(19): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *                code will be based on direct access to peripheral<92>s registers 
+                                                                    ^
+C:/Users/NhutNguyen/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include\stm32f10x.h(26): warning: invalid UTF-8 in comment [-Winvalid-utf8]
+  *           - Macros to access peripheral<92>s registers hardware
+                                           ^
+main.c(12): warning: // comments are not allowed in this language [-Wcomment]
+        GPIOC->CRH |= (1<<20);  // PC13 Output mode 10 MHz, push pull
+                                ^
+main.c(20): warning: no previous prototype for function 'TIM2_config' [-Wmissing-prototypes]
+void TIM2_config(void)
+     ^
+main.c(20): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void TIM2_config(void)
+^
+static 
+main.c(43): warning: no previous prototype for function 'ud_delay_us' [-Wmissing-prototypes]
+void ud_delay_us(uint16_t us)
+     ^
+main.c(43): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void ud_delay_us(uint16_t us)
+^
+static 
+main.c(54): warning: variable declaration in for loop is a C99-specific feature [-Wc99-extensions]
+        for(uint16_t index =0; index <ms; index++)
+            ^
+main.c(54): warning: GCC does not allow variable declarations in for loop initializers before C99 [-Wgcc-compat]
+main.c(52): warning: no previous prototype for function 'ud_delay_ms' [-Wmissing-prototypes]
+void ud_delay_ms(uint16_t ms)
+     ^
+main.c(52): note: declare 'static' if the function is not intended to be used outside of this translation unit
+void ud_delay_ms(uint16_t ms)
+^
+static 
+9 warnings generated.
+compiling main.c...
+linking...
+Program Size: Code=992 RO-data=252 RW-data=0 ZI-data=1632  
+FromELF: creating hex file...
+".\Objects\timer.axf" - 0 Error(s), 9 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM.CMSIS.5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F1xx_DFP.2.4.1.pack
+                Keil.STM32F1xx_DFP.2.4.1
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/STM32F103C8
+  ./RTE/_STM32F103C8T6
+  C:/Users/NhutNguyen/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/NhutNguyen/AppData/Local/Arm/Packs/Keil/STM32F1xx_DFP/2.4.1/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.6.0
+
+   * Component: Keil::Device:Startup:1.0.0
+      Source file:   Device/Source/ARM/startup_stm32f10x_md.s
+      Include file:  RTE_Driver/Config/RTE_Device.h
+      Source file:   Device/Source/ARM/STM32F1xx_OPT.s
+      Source file:   Device/Source/system_stm32f10x.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

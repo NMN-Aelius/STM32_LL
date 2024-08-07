@@ -5,4 +5,4 @@
 // Date: 05th August 2024
 
 This repository is about programming STM32 Micro-Controller using LL (low layer) to interact with the register directly.
-Making the driver for the peripheral, communication protocol, timer, and interrupt is also mentioned.
+Making for the peripheral, communication protocol, timer, and interrupt is also mentioned.
